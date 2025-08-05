@@ -1,0 +1,78 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 4,
+  "modules-left": [
+    "custom/current-workspace",
+    "wlr/taskbar"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "tray",
+    "hyprland/language",
+    "network",
+    "pulseaudio#microphone",
+    "pulseaudio",
+    "clock"
+  ],
+  "wlr/taskbar": {
+    "on-click": "activate",
+    "icon-size": 16,
+    "ignore-list": [
+      "kitty"
+    ]
+  }, 
+  "custom/current-workspace": {
+    "exec": "~/.config/waybar/scripts/current-workspace.sh",
+    "interval": 1,
+    "format": "{}",
+  },
+  "hyprland/window": {
+    "max-length": 128
+  },
+  "network": {
+    "interface": "enp17s0u2", // Replace with your actual ethernet interface name
+    "format-ethernet": "󰈁",  // Icon for wired connection
+    "format-disconnected": "󰤮",  // Icon for no connection
+    "tooltip-format": "Ethernet: {ifname}",
+    "on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "󰍬  {volume}",
+    "format-source-muted": " ",
+    "on-click": "pavucontrol -t 4",
+    "on-click-right": "pamixer --default-source --toggle-mute",
+    "on-scroll-up": "pamixer --default-source -i 2",
+    "on-scroll-down": "pamixer --default-source -d 2",
+    "tooltip-format": "{format_source} {source_desc}",
+    "scroll-step": 5
+  },
+  "pulseaudio": {
+    "max-volume": 150,
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon}  {volume}%",
+    "format-muted": "",
+    "format-icons": {
+    "default": ["", "", " "]
+    },
+    "on-click": "pavucontrol"
+  },
+  "clock": {
+    "format": "{:%a %Y %m %d | %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "tray": {
+    "spacing": 5
+  },
+  "hyprland/language": {
+    "format-ar": " AR ",
+    "format-en": " EN ",
+   }
+}
+
+
+
