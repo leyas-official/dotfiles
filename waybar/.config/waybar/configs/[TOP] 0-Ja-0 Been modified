@@ -22,28 +22,29 @@
 "margin-right": 8,
 
 "modules-left": [
-  "hyprland/workspaces#number",
- 	],
+	"clock",
+	"custom/separator#blank",
+	"tray",
+	],
 
 "modules-center": [
-  "pulseaudio#microphone",
-  "custom/separator#dot-line",  
-  "mpris",
+	"group/app_drawer",
 	"custom/separator#dot-line",
-  "pulseaudio",
+	"hyprland/workspaces#kanji",
+	"custom/separator#dot-line",
+	"group/notify",	
 	],
 
 "modules-right": [
-  "tray",
-  "custom/separator#dot-line",
-  "hyprland/language",
-	"custom/separator#blank",  
-	"network#speed",
+        //"mpris",
+        //"custom/separator#dot-line",
+	"group/laptop",
 	"custom/separator#blank",
-  "clock#3",
-  "custom/separator#blank",
-	"custom/power",
+	"group/mobo_drawer",
+	"custom/separator#line",  
+	"group/audio",
+	"custom/separator#dot-line",
+	"custom/separator#blank", 
+	"group/status",
 	],
 }
-
-

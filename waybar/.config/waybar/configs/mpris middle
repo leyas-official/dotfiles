@@ -22,28 +22,28 @@
 "margin-right": 8,
 
 "modules-left": [
-  "hyprland/workspaces#number",
- 	],
+	//"idle_inhibitor",
+	//"custom/separator#blank",
+	"clock",
+        "custom/separator#blank",	
+	"tray",
+        "custom/separator#blank",	
+        "hyprland/workspaces#alpha",
+	],
 
 "modules-center": [
-  "pulseaudio#microphone",
-  "custom/separator#dot-line",  
-  "mpris",
-	"custom/separator#dot-line",
-  "pulseaudio",
+        "mpris",
 	],
 
 "modules-right": [
-  "tray",
-  "custom/separator#dot-line",
-  "hyprland/language",
+        //"mpris",
+        //"custom/separator#dot-line",
+        "group/notify",	
+	"battery",
 	"custom/separator#blank",  
-	"network#speed",
+	"group/audio",
 	"custom/separator#blank",
-  "clock#3",
-  "custom/separator#blank",
 	"custom/power",
 	],
 }
-
 
