@@ -1,8 +1,8 @@
 {
-    "label" : "lock",
-    "action" : "$HOME/.config/hypr/scripts/hyprlock.sh",
-    "text" : "Lock",
-    "keybind" : "l"
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
 }
 {
     "label" : "reboot",
@@ -23,10 +23,10 @@
     "keybind" : "e"
 }
 {
-    "label" : "suspend",
-    "action" : "systemctl suspend",
-    "text" : "Suspend",
-    "keybind" : "u"
+    "label" : "lock",
+    "action" : "$HOME/.config/hypr/scripts/hyprlock.sh",
+    "text" : "Lock",
+    "keybind" : "l"
 }
 {
     "label" : "hibernate",

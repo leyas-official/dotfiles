@@ -262,7 +262,7 @@
 		"stopped": "",
 	},
 	"dynamic-order": ["artist", "title"],
-	"ignored-players": ["firefox", "zen"],
+	"ignored-players": ["zen"],
 	"max-length": 50,
 },
 
