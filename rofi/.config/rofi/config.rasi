@@ -28,7 +28,7 @@ window {
     border-color:		 @secondary-container;
     border-radius:               15px;
     cursor:                      "default";
-    background-color:            @on-primary-fixed;
+    background-color:            @on-primary;
 }
 
 mainbox {
@@ -121,30 +121,23 @@ element {
     text-color:                  @on-surface;
     cursor:                      pointer;
 }
-element normal.normal {
-    background-color:            inherit;
-    text-color:                  inherit;
-}
-element normal.urgent {
-    background-color:            @error;
-    text-color:                  @on-surface;
-}
-element normal.active {
-    background-color:            @primary;
-    text-color:                  @on-surface;
-}
+
+/* Selected entries */
 element selected.normal {
-    background-color:            @primary;
-    text-color:                  @on-secondary;
+    background-color: @secondary-fg;
+    text-color: @on-surface;
 }
+
 element selected.urgent {
-    background-color:            @error;
-    text-color:                  @on-secondary;
+    background-color: @error;
+    text-color: @on-secondary;
 }
+
 element selected.active {
-    background-color:            @error;
-    text-color:                  @on-secondary;
+    background-color: @secondary;
+    text-color: @on-surface;
 }
+
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
