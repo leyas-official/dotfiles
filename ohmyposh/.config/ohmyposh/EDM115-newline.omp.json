@@ -35,6 +35,17 @@
       "newline": true,
       "segments": [
         {
+          "type": "python",
+          "style": "plain",
+          "foreground": "#A6E3A1",
+          "template": " ( {{ .Venv }} Venv ) ",
+          "properties": {
+            "display_mode": "environment",
+            "fetch_virtual_env": true,
+            "fetch_version": false
+          }
+        },
+        {
           "foreground": "#B6D6F2",
           "leading_diamond": "<#BFA8BF>~</>",
           "properties": {
